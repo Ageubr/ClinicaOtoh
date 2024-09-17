@@ -1,0 +1,173 @@
+
+                     /*-----------------estilo geral do site ----------------*/
+
+/* styles.css */
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e0f7fa; /* Azul claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #0097a7; /* Azul escuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: #0097a7; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+    /*----------------------------------------TRATAMENTOS----------------------------------------*/
+
+/* Estilo geral para a seção de tratamentos */
+#treatments {
+    padding: 20px;
+    background-color: #f4f4f4; /* Adiciona um fundo cinza claro para a seção */
+}
+
+/* Grid de tratamentos para duas colunas */
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas flexíveis com largura mínima de 300px */
+    gap: 20px; /* Espaçamento entre as seções */
+    justify-content: center; /* Centraliza as seções horizontalmente */
+}
+
+/* Estilo individual para cada tratamento */
+.treatment {
+    background-color: #fff; /* Fundo branco para cada seção de tratamento */
+    border: 1px solid #007bff; /* Borda azul clara */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto e a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor da seção */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves para efeitos de hover */
+}
+
+/* Efeito de hover para a seção de tratamento */
+.treatment:hover {
+    transform: scale(1.03); /* Aumenta ligeiramente o tamanho da seção ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Estilo para as imagens dentro da seção de tratamentos */
+.treatment img {
+    max-width: 85%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 3px solid #007bff; /* Borda azul ao redor da imagem */
+    border-radius: 8px; /* Borda arredondada */
+    display: block; /* Garante que a margem automática funcione */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 5px; /* Adiciona espaço interno ao redor da imagem */
+    background-color: #fff; /* Fundo branco atrás da imagem */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves para efeitos de hover */
+}
+
+/* Efeito de hover para a imagem */
+.treatment img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra maior ao passar o mouse */
+}
+
+/* Estilo para os títulos dentro da seção de tratamentos */
+.treatment .title {
+    font-size: 24px; /* Tamanho do título */
+    font-weight: 700; /* Peso da fonte */
+    margin: 15px 0; /* Espaçamento acima e abaixo do título */
+    color: #007bff; /* Cor azul para o título */
+    border-bottom: 3px solid #007bff; /* Linha azul abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Estilo para a descrição dentro da seção de tratamentos */
+.treatment .description {
+    margin: 20px 0; /* Margem acima e abaixo da descrição */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    border: 1px solid #007bff; /* Borda azul ao redor da descrição */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaço interno */
+    background-color: #fff; /* Fundo branco */
+    transition: box-shadow 0.3s; /* Transição suave para efeito de hover */
+}
+
+/* Efeito de hover para a descrição */
+.treatment .description:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao passar o mouse */
+}
+
+/* Estilo para os botões dentro da seção de tratamentos */
+.treatment a.button {
+    display: inline-block; /* Tamanho ajustado ao conteúdo */
+    padding: 12px 25px; /* Espaçamento interno do botão */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    background-color: #007bff; /* Cor de fundo azul */
+    border: 2px solid #007bff; /* Borda azul ao redor do botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 10px 0; /* Margem acima e abaixo do botão */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Transições suaves para efeitos de hover */
+}
+
+/* Efeito de hover para os botões */
+.treatment a.button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    border-color: #0056b3; /* Cor da borda ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+/* Estilo para o estado de foco dos botões */
+.treatment a.button:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra azul ao redor do botão */
+}
